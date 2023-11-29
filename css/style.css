@@ -1,0 +1,145 @@
+/* fuente de letra general*/
+*{ font-family:'Nunito', sans-serif; 
+    margin: 0;
+    padding: 0;
+    }
+    /* color de fondo*/
+body{
+    background-color: rgb(190, 204, 216);
+}
+/* nombre de la empresa */
+h1{
+    font-size: 3rem;
+    text-align: center;
+    background-color:#800000 ;  
+    color: #ffffff;
+  }
+  /*estilo de horario*/
+h2{
+    font-size: 1.5rem;
+    text-align: left;
+    color:#800000;
+    text-decoration: underline;
+}
+/* estilo parrafos*/
+p{
+    color: #800000;
+    font-size: 1rem;
+    text-align: center
+}
+/* tamaño de las imagenes de productos*/
+img{
+    width: 300px;
+    height: 230px;
+    border : 2px solid #800000
+    ;
+}
+
+.contenedor-productos{
+    
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
+
+/* color del footer*/
+footer{
+    background-color: rgb(94, 93, 93);
+   
+}
+/* logo de whatsapp*/
+.wpp-img{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+}
+.fondologo-whatsapp{
+    position: fixed;
+    bottom: 3rem;
+    right: 0;
+    
+}
+h4{
+    font-size: 1.rem;
+    background-color: #800000;
+    color: #ffffff;
+}
+/* estilo mapa*/
+.mapa{
+    width: 300px;
+    height: 230px;
+    border: 2px solid #800000;
+}
+h3{
+    color: #ffffff;
+    text-decoration: underline;
+}
+/* estilos de los productos*/
+
+
+.footer-productos{
+    background-color: #ffffff;
+}
+#section-pie-de-pagina-productos{
+    padding: 20px 0;
+   
+}
+
+h5{
+    display: flex;
+    justify-content: center;
+}
+#img-dentro-de-producto{
+    display: flex;
+    justify-content: center;
+
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* mobil*/
+@media only screen and (max-width: 599px){
+    .fondologo-whatsapp{
+        display: flex;
+        position: static;
+    }
+
+}
+
+
+/* tablet*/
+@media only screen and (min-width: 600px) {
+    .nav-pie-de-pagina-productos{
+        border: 1px solid#800000  ;
+        display: flex;
+        justify-content: space-evenly;
+}
+}
+/* desktop */
+@media only screen and (min-width: 960px){
+    .nav-pie-de-pagina-productos{
+        border: 1px solid#800000  ;
+        display: flex;
+        justify-content: space-between;
+}   
+}
+
+/* Bootstrap esta en ofertas.html*/
+#carouselExampleAutoplaying{
+    width: 285px;
+   
+}
+/*Pseudoclases*/
+a:link {
+    color: rgb(255, 0, 0);
+}
+a:visited {
+color: rgb(0, 0, 0);
+}
+a:hover {
+color: rgb(0, 0, 255);
+}
+    
