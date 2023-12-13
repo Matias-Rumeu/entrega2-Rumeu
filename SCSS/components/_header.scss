@@ -1,0 +1,22 @@
+$color-empresa: #800000;
+
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  background-color: $color-empresa;
+  color: #ffffff;
+}
+
+h2 {
+  font-size: 1.5rem;
+  text-align: left;
+  color: $color-empresa;
+  text-decoration: underline;
+}
+
+p {
+  color: $color-empresa;
+  font-size: 1rem;
+  text-align: center;
+}

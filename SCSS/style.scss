@@ -1,0 +1,66 @@
+@import "./components/header";
+@import"./components/main";
+@import"./components/footer";
+
+
+$fuente-general: 'Nunito', sans-serif;
+$fondo-body: rgb(190, 204, 216);
+
+
+* {
+  font-family: $fuente-general;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $fondo-body;
+}
+
+// Estilos en SCSS para diferentes tamaños de pantalla
+
+/* móvil */
+@media only screen and (max-width: 599px) {
+    .fondologo-whatsapp {
+      display: flex;
+      position: static;
+    }
+  }
+  
+  /* tablet */
+  @media only screen and (min-width: 600px) {
+    .nav-pie-de-pagina-productos {
+      border: 1px solid #800000;
+      display: flex;
+      justify-content: space-evenly;
+    }
+  }
+  
+  /* escritorio */
+  @media only screen and (min-width: 960px) {
+    .nav-pie-de-pagina-productos {
+      border: 1px solid #800000;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  // Estilos en SCSS para ofertas.html con Bootstrap
+
+#carouselExampleAutoplaying {
+    width: 285px;
+  }
+  
+  // Pseudoclases
+  a {
+    &:link {
+      color: rgb(255, 0, 0);
+    }
+    &:visited {
+      color: rgb(0, 0, 0);
+    }
+    &:hover {
+      color: rgb(0, 0, 255);
+    }
+  }
+  
+  
