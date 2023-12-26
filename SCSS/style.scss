@@ -44,7 +44,7 @@ body {
       justify-content: space-between;
     }
   }
-  // Estilos en SCSS para ofertas.html con Bootstrap
+  // Bootstrap esta en otrosproductos.html 
 
 #carouselExampleAutoplaying {
     width: 285px;
@@ -62,5 +62,95 @@ body {
       color: rgb(0, 0, 255);
     }
   }
-  
+  // estilo en grid que esta en ofertas.html
+  .grid-container {
+    display: grid;
+    grid-template-rows: repeat(4, 150px);
+    grid-template-columns: repeat(4, auto);
+    
+    // Media Query para pantallas con un ancho maximo de 599px
+    @media only screen and (max-width: 599px) {
+      .grid-item {
+        border: solid 2px #800000;
+        padding: 2px;
+        margin: 2px;
+      }
+      .primer-item {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        font-family: $fuente-general;
+        text-decoration: underline;
+        color:#000000 ;
+        font-size: 30px;
+        background-color: #1f8feb;
+      }
+      .segundo-item {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        font-family: $fuente-general;
+        color: rgb(0, 0, 0);
+        font-size: 25px;
+        background-color: #20c200;
+
+      }
+      .tercer-item {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        font-family: $fuente-general;
+        color: rgb(69, 243, 112);
+        font-size: 25px;
+        background-color: #c200c2;
+      }
+      .cuarto-item {
+        grid-column: 1/2;
+        grid-row: 4/5;
+        font-family: $fuente-general;
+        color: aliceblue;
+        font-size: 25px;
+        background-color: #00098a;
+      }
+    }
+    
+    // Media Query para pantallas con un ancho mínimo de 600px 
+    @media only screen and (min-width: 600px)  {
+      .grid-item {
+        border: solid 2px #800000;
+        padding: 2px;
+        margin: 2px;
+      }
+      .primer-item {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        font-family: $fuente-general;
+        text-decoration: underline;
+        color:#000000 ;
+        font-size: 30px;
+        background-color: #1f8feb;
+      }
+      .segundo-item {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        font-family: $fuente-general;
+        color: 404040;
+        font-size: 19px;
+        background-color: #20c200;
+      }
+      .tercer-item {
+        grid-column: 3/4;
+        grid-row: 3/4;
+        font-family: $fuente-general;
+        color: #000000;
+        font-size: 20px;
+        background-color: #c200c2;
+      }
+      .cuarto-item {
+        grid-column: 4/5;
+        grid-row: 4/5;
+        font-family: $fuente-general;
+        color: aliceblue;
+        font-size: 20px;
+        background-color: #00098a;
+      }
+    }
+  }
   
