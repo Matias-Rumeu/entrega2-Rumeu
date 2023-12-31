@@ -1,156 +1,180 @@
 @import "./components/header";
-@import"./components/main";
-@import"./components/footer";
+@import "./components/main";
+@import "./components/footer";
 
-
-$fuente-general: 'Nunito', sans-serif;
+$fuente-general: "Nunito", sans-serif;
 $fondo-body: rgb(190, 204, 216);
-
 
 * {
   font-family: $fuente-general;
   margin: 0;
   padding: 0;
 }
-
+// Estilo gradient en el body
 body {
-  background-color: $fondo-body;
+  background: radial-gradient(circle, #ddb0b0 0%, #9b9bd3 100%);
 }
 
 // Estilos en SCSS para diferentes tamaños de pantalla
 
 /* móvil */
 @media only screen and (max-width: 599px) {
-    .fondologo-whatsapp {
-      display: flex;
-      position: static;
-    }
+  .fondologo-whatsapp {
+    display: flex;
+    position: static;
   }
-  
-  /* tablet */
-  @media only screen and (min-width: 600px) {
-    .nav-pie-de-pagina-productos {
-      border: 1px solid #800000;
-      display: flex;
-      justify-content: space-evenly;
-    }
+}
+
+/* tablet */
+@media only screen and (min-width: 600px) {
+  .nav-pie-de-pagina-productos {
+    border: 1px solid #800000;
+    display: flex;
+    justify-content: space-evenly;
   }
-  
-  /* escritorio */
-  @media only screen and (min-width: 960px) {
-    .nav-pie-de-pagina-productos {
-      border: 1px solid #800000;
-      display: flex;
-      justify-content: space-between;
-    }
+}
+
+/* escritorio */
+@media only screen and (min-width: 960px) {
+  .nav-pie-de-pagina-productos {
+    border: 1px solid #800000;
+    display: flex;
+    justify-content: space-between;
   }
-  // Bootstrap esta en otrosproductos.html 
+}
+// Bootstrap esta en otrosproductos.html
 
 #carouselExampleAutoplaying {
-    width: 285px;
-  }
-  
-  // Pseudoclases
-  a {
-    &:link {
-      color: rgb(255, 0, 0);
-    }
-    &:visited {
-      color: rgb(0, 0, 0);
-    }
-    &:hover {
-      color: rgb(0, 0, 255);
-    }
-  }
-  // estilo en grid que esta en ofertas.html
-  .grid-container {
-    display: grid;
-    grid-template-rows: repeat(4, 150px);
-    grid-template-columns: repeat(4, auto);
-    
-    // Media Query para pantallas con un ancho maximo de 599px
-    @media only screen and (max-width: 599px) {
-      .grid-item {
-        border: solid 2px #800000;
-        padding: 2px;
-        margin: 2px;
-      }
-      .primer-item {
-        grid-column: 1/2;
-        grid-row: 1/2;
-        font-family: $fuente-general;
-        text-decoration: underline;
-        color:#000000 ;
-        font-size: 30px;
-        background-color: #1f8feb;
-      }
-      .segundo-item {
-        grid-column: 1/2;
-        grid-row: 2/3;
-        font-family: $fuente-general;
-        color: rgb(0, 0, 0);
-        font-size: 25px;
-        background-color: #20c200;
+  width: 285px;
+}
 
-      }
-      .tercer-item {
-        grid-column: 1/2;
-        grid-row: 3/4;
-        font-family: $fuente-general;
-        color: rgb(69, 243, 112);
-        font-size: 25px;
-        background-color: #c200c2;
-      }
-      .cuarto-item {
-        grid-column: 1/2;
-        grid-row: 4/5;
-        font-family: $fuente-general;
-        color: aliceblue;
-        font-size: 25px;
-        background-color: #00098a;
-      }
+// Pseudoclases
+a {
+  &:link {
+    color: rgb(255, 0, 0);
+  }
+  &:visited {
+    color: rgb(0, 0, 0);
+  }
+  &:hover {
+    color: rgb(0, 0, 255);
+  }
+}
+// estilo en GRID que esta en ofertas.html
+.grid-container {
+  display: grid;
+  grid-template-rows: repeat(4, 150px);
+  grid-template-columns: repeat(4, auto);
+
+  // Media Query para pantallas con un ancho maximo de 599px
+  @media only screen and (max-width: 599px) {
+    .grid-item {
+      border: solid 2px #800000;
+      padding: 2px;
+      margin: 2px;
     }
-    
-    // Media Query para pantallas con un ancho mínimo de 600px 
-    @media only screen and (min-width: 600px)  {
-      .grid-item {
-        border: solid 2px #800000;
-        padding: 2px;
-        margin: 2px;
-      }
-      .primer-item {
-        grid-column: 1/2;
-        grid-row: 1/2;
-        font-family: $fuente-general;
-        text-decoration: underline;
-        color:#000000 ;
-        font-size: 30px;
-        background-color: #1f8feb;
-      }
-      .segundo-item {
-        grid-column: 2/3;
-        grid-row: 2/3;
-        font-family: $fuente-general;
-        color: 404040;
-        font-size: 19px;
-        background-color: #20c200;
-      }
-      .tercer-item {
-        grid-column: 3/4;
-        grid-row: 3/4;
-        font-family: $fuente-general;
-        color: #000000;
-        font-size: 20px;
-        background-color: #c200c2;
-      }
-      .cuarto-item {
-        grid-column: 4/5;
-        grid-row: 4/5;
-        font-family: $fuente-general;
-        color: aliceblue;
-        font-size: 20px;
-        background-color: #00098a;
-      }
+    .primer-item {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      font-family: $fuente-general;
+      text-decoration: underline;
+      color: #000000;
+      font-size: 30px;
+      background-color: #1f8feb;
+    }
+    .segundo-item {
+      grid-column: 1/2;
+      grid-row: 2/3;
+      font-family: $fuente-general;
+      color: rgb(0, 0, 0);
+      font-size: 25px;
+      background-color: #20c200;
+    }
+    .tercer-item {
+      grid-column: 1/2;
+      grid-row: 3/4;
+      font-family: $fuente-general;
+      color: rgb(69, 243, 112);
+      font-size: 25px;
+      background-color: #c200c2;
+    }
+    .cuarto-item {
+      grid-column: 1/2;
+      grid-row: 4/5;
+      font-family: $fuente-general;
+      color: aliceblue;
+      font-size: 25px;
+      background-color: #00098a;
     }
   }
-  
+
+  // Media Query para pantallas con un ancho mínimo de 600px
+  @media only screen and (min-width: 600px) {
+    .grid-item {
+      border: solid 2px #800000;
+      padding: 2px;
+      margin: 2px;
+    }
+    .primer-item {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      font-family: $fuente-general;
+      text-decoration: underline;
+      color: #000000;
+      font-size: 30px;
+      background-color: #1f8feb;
+    }
+    .segundo-item {
+      grid-column: 2/3;
+      grid-row: 2/3;
+      font-family: $fuente-general;
+      color: 404040;
+      font-size: 19px;
+      background-color: #20c200;
+    }
+    .tercer-item {
+      grid-column: 3/4;
+      grid-row: 3/4;
+      font-family: $fuente-general;
+      color: #000000;
+      font-size: 20px;
+      background-color: #c200c2;
+    }
+    .cuarto-item {
+      grid-column: 4/5;
+      grid-row: 4/5;
+      font-family: $fuente-general;
+      color: aliceblue;
+      font-size: 20px;
+      background-color: #00098a;
+    }
+  }
+}
+
+// Estilos para el botón
+.adentro {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  outline: none;
+  display: flex; // Establece el contenedor del botón como flexbox
+  justify-content: center; // Centra horizontalmente el contenido
+
+  // Estilos para la silla
+  .afuera {
+    width: 50px;
+    height: 50px;
+    background-color: #008080; // Color del asiento de la silla
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out; // Transición para el cambio de tamaño
+    align-self: center; // Centra verticalmente la silla
+  }
+
+  // Efecto al pasar el mouse sobre el botón
+  &:hover {
+    .afuera {
+      transform: scale(1.1); // Aumentar el tamaño al 110% en hover
+    }
+  }
+}

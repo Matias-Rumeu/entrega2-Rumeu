@@ -99,7 +99,7 @@ ul {
 }
 
 body {
-  background-color: rgb(190, 204, 216);
+  background: radial-gradient(circle, #ddb0b0 0%, #9b9bd3 100%);
 }
 
 /* móvil */
@@ -223,6 +223,27 @@ a:hover {
     font-size: 20px;
     background-color: #00098a;
   }
+}
+
+.adentro {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  justify-content: center;
+}
+.adentro .afuera {
+  width: 50px;
+  height: 50px;
+  background-color: #008080;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
+  align-self: center;
+}
+.adentro:hover .afuera {
+  transform: scale(1.1);
 }
 
 /*# sourceMappingURL=style.css.map */
