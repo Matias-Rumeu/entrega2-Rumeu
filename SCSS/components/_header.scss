@@ -4,18 +4,27 @@ h1 {
   font-size: 3rem;
   text-align: center;
   background-color: $color-empresa;
-  color: #ffffff;
+  color: #ffffff ;
 }
 
 h2 {
+  background-color: #D24545;
   font-size: 1.5rem;
   text-align: left;
-  color: $color-empresa;
+  color: rgb(255, 255, 255);
   text-decoration: underline;
 }
 
 p {
-  color: $color-empresa;
-  font-size: 1rem;
+  background-color: #cf6262;
+  color: #fdfdfd;
+  font-size: 1.2rem;
   text-align: center;
+}
+.nav-inicio{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333; 
 }

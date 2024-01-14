@@ -7,22 +7,34 @@ h1 {
 }
 
 h2 {
+  background-color: #D24545;
   font-size: 1.5rem;
   text-align: left;
-  color: #800000;
+  color: rgb(255, 255, 255);
   text-decoration: underline;
 }
 
 p {
-  color: #800000;
-  font-size: 1rem;
+  background-color: #cf6262;
+  color: #fdfdfd;
+  font-size: 1.2rem;
   text-align: center;
 }
 
+.nav-inicio {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
 img {
-  width: 300px;
+  width: 290px;
   height: 230px;
-  border: 2px solid #800000;
+  border: #D24545 5px solid;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .contenedor-productos {
@@ -31,8 +43,13 @@ img {
   flex-wrap: wrap;
 }
 
+h5 {
+  color: #800000;
+  font-size: 1rem;
+}
+
 footer {
-  background-color: rgb(94, 93, 93);
+  background-color: #E4DEBE;
 }
 
 /* logo de whatsapp */
@@ -50,29 +67,28 @@ footer {
 
 h4 {
   font-size: 1rem;
+  text-decoration: underline;
   background-color: #800000;
   color: #ffffff;
 }
 
 /* estilo mapa */
 .mapa {
-  width: 300px;
+  width: 290px;
   height: 230px;
-  border: 2px solid #800000;
+  border: #800000 5px solid;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 h3 {
-  color: #ffffff;
+  color: #000000;
   text-decoration: underline;
 }
 
 /* estilos de los productos */
 .footer-productos {
   background-color: #ffffff;
-}
-
-#section-pie-de-pagina-productos {
-  padding: 20px 0;
 }
 
 h5 {
@@ -111,7 +127,8 @@ body {
 }
 /* tablet */
 @media only screen and (min-width: 600px) {
-  .nav-pie-de-pagina-productos {
+  .nav-productos {
+    color: #ffffff;
     border: 1px solid #800000;
     display: flex;
     justify-content: space-evenly;
@@ -119,7 +136,8 @@ body {
 }
 /* escritorio */
 @media only screen and (min-width: 960px) {
-  .nav-pie-de-pagina-productos {
+  .nav-productos {
+    color: #ffffff;
     border: 1px solid #800000;
     display: flex;
     justify-content: space-between;
@@ -146,7 +164,9 @@ a:hover {
 }
 @media only screen and (max-width: 599px) {
   .grid-container .grid-item {
-    border: solid 2px #800000;
+    border: #D24545 5px solid;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     padding: 2px;
     margin: 2px;
   }
@@ -186,7 +206,9 @@ a:hover {
 }
 @media only screen and (min-width: 600px) {
   .grid-container .grid-item {
-    border: solid 2px #800000;
+    border: #D24545 5px solid;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     padding: 2px;
     margin: 2px;
   }
@@ -244,6 +266,16 @@ a:hover {
 }
 .adentro:hover .afuera {
   transform: scale(1.1);
+}
+
+#section-productos {
+  padding: 20px 0;
+  color: #ffffff;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
 }
 
 /*# sourceMappingURL=style.css.map */

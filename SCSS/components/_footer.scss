@@ -1,5 +1,5 @@
 footer {
-  background-color: rgb(94, 93, 93);
+  background-color: #E4DEBE;
 }
 
 /* logo de whatsapp */
@@ -17,19 +17,22 @@ footer {
 
 h4 {
   font-size: 1rem;
+  text-decoration: underline;
   background-color: #800000;
   color: #ffffff;
 }
 
 /* estilo mapa */
 .mapa {
-  width: 300px;
+  width: 290px;
   height: 230px;
-  border: 2px solid #800000;
+  border: #800000 5px solid;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 h3 {
-  color: #ffffff;
+  color: #000000;
   text-decoration: underline;
 }
 
@@ -39,9 +42,7 @@ h3 {
   background-color: #ffffff;
 }
 
-#section-pie-de-pagina-productos {
-  padding: 20px 0;
-}
+
 
 h5 {
   display: flex;
