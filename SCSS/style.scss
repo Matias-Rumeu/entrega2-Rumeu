@@ -28,7 +28,6 @@ body {
 /* tablet */
 @media only screen and (min-width: 600px) {
   .nav-productos {
-    color: #ffffff;
     border: 1px solid #800000;
     display: flex;
     justify-content: space-evenly;
@@ -38,7 +37,6 @@ body {
 /* escritorio */
 @media only screen and (min-width: 960px) {
   .nav-productos {
-    color: #ffffff;
     border: 1px solid #800000;
     display: flex;
     justify-content: space-between;
@@ -53,10 +51,10 @@ body {
 // Pseudoclases
 a {
   &:link {
-    color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
   }
   &:visited {
-    color: rgb(0, 0, 0);
+    color: rgb(253, 183, 183);
   }
   &:hover {
     color: rgb(0, 0, 255);
@@ -187,7 +185,6 @@ a {
 
 #section-productos {
   padding: 20px 0;
-  color: #ffffff;
   list-style-type: none;
   margin: 0;
   padding: 0;
