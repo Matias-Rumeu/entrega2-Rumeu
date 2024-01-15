@@ -15,7 +15,7 @@ h2 {
 }
 
 p {
-  background-color: #cf6262;
+  background-color: #320083;
   color: #fdfdfd;
   font-size: 1.2rem;
   text-align: center;
@@ -146,10 +146,10 @@ body {
 }
 
 a:link {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
 a:visited {
-  color: rgb(250, 170, 170);
+  color: rgb(121, 2, 2);
 }
 a:hover {
   color: rgb(0, 0, 255);
@@ -272,7 +272,7 @@ a:hover {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: #9b9999;
 }
 
 /*# sourceMappingURL=style.css.map */
